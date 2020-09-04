@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Failed 2 minutes ago");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Tickets", new System.Windows.Forms.TreeNode[] {
             treeNode1});
@@ -69,7 +70,15 @@
             this.pauseNextRunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.cmForCherwellJobFailed = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.retry3rdTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.descheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveScheduleUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelTomorrowMorningsRunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.cmForCherwellJobFailed.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -245,6 +254,7 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(13, 191);
             this.treeView1.Name = "treeView1";
+            treeNode1.ContextMenuStrip = this.cmForCherwellJobFailed;
             treeNode1.Name = "Node10";
             treeNode1.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             treeNode1.Text = "Failed 2 minutes ago";
@@ -274,11 +284,66 @@
             this.treeView1.Size = new System.Drawing.Size(657, 370);
             this.treeView1.TabIndex = 11;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Run History";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(85, 167);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(150, 22);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Change Scope to Selected";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // cmForCherwellJobFailed
+            // 
+            this.cmForCherwellJobFailed.ImageScalingSize = new System.Drawing.Size(28, 28);
+            this.cmForCherwellJobFailed.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.retry3rdTimeToolStripMenuItem,
+            this.descheduleToolStripMenuItem,
+            this.moveScheduleUpToolStripMenuItem,
+            this.cancelTomorrowMorningsRunToolStripMenuItem});
+            this.cmForCherwellJobFailed.Name = "cmForCherwellJobFailed";
+            this.cmForCherwellJobFailed.Size = new System.Drawing.Size(250, 92);
+            // 
+            // retry3rdTimeToolStripMenuItem
+            // 
+            this.retry3rdTimeToolStripMenuItem.Name = "retry3rdTimeToolStripMenuItem";
+            this.retry3rdTimeToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.retry3rdTimeToolStripMenuItem.Text = "Retry (3rd time)";
+            // 
+            // descheduleToolStripMenuItem
+            // 
+            this.descheduleToolStripMenuItem.Name = "descheduleToolStripMenuItem";
+            this.descheduleToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.descheduleToolStripMenuItem.Text = "Deschedule";
+            // 
+            // moveScheduleUpToolStripMenuItem
+            // 
+            this.moveScheduleUpToolStripMenuItem.Name = "moveScheduleUpToolStripMenuItem";
+            this.moveScheduleUpToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.moveScheduleUpToolStripMenuItem.Text = "Move Schedule Up from 4:00 AM";
+            // 
+            // cancelTomorrowMorningsRunToolStripMenuItem
+            // 
+            this.cancelTomorrowMorningsRunToolStripMenuItem.Name = "cancelTomorrowMorningsRunToolStripMenuItem";
+            this.cancelTomorrowMorningsRunToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.cancelTomorrowMorningsRunToolStripMenuItem.Text = "Cancel Tomorrow Morning\'s Run";
+            // 
             // JobManagerUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 730);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -296,6 +361,7 @@
             this.Text = "Job Manager View";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.cmForCherwellJobFailed.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,6 +389,13 @@
         private System.Windows.Forms.ToolStripMenuItem pauseNextRunToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startJobToolStripMenuItem;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ContextMenuStrip cmForCherwellJobFailed;
+        private System.Windows.Forms.ToolStripMenuItem retry3rdTimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem descheduleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moveScheduleUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cancelTomorrowMorningsRunToolStripMenuItem;
     }
 }
 
