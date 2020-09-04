@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSchedulerWthQuartzNETAttempt1", "JobSchedulerWthQuartzNETAttempt1\JobSchedulerWthQuartzNETAttempt1.csproj", "{076ACDAC-5942-492B-B42E-AF6037208ACC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{10E8AB13-9E3F-4F5A-AF7A-BEE1A7462CCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{EBD1D2CB-36A8-4A53-82DE-FD058720ABED}"
+	ProjectSection(SolutionItems) = preProject
+		Images\Documentation\SQLAgentJobLogNoCurrentStep.png = Images\Documentation\SQLAgentJobLogNoCurrentStep.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBD1D2CB-36A8-4A53-82DE-FD058720ABED} = {10E8AB13-9E3F-4F5A-AF7A-BEE1A7462CCE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3983329-E191-4F59-BEFF-580BC3E80145}
